@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- BOOTSTRAP WAS ONLY ADDED  BECAUSE THE NAVBAR WASN'T FITTING TO  THE HTML PAGE using a regular div -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+
+    <style>
+        body {background-color: lightcoral;}
+        #navgbar {
+            position: static;
+            width: 100%;
+            max-width: 100%;
+            padding: 0;
+            background-color: azure;
+            display: flex;
+            align-items: center;
+            gap:10px;
+            height: 10vh;
+            border-radius: 4px;
+            border: 2px solid black;
+                }
+
+
+        #footer {
+            position: static;
+            bottom: 0px ;
+            background-color:gray;
+            display:flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 6vh;
+            width: 100vw;
+        }
+
+        /* ANGULAR text */
+        h6 {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+            font-weight: bolder;
+            font-size: x-large;
+            letter-spacing: 10px;
+            position:static;
+           }
+        #middle {
+            position:static;
+            top: 68px;
+            height: 84vh;
+            width: 100vw;
+            display: flex;
+            
+        }
+        #right, #left { 
+           
+            padding: 10px;
+            color:black;
+            display:flex;
+            flex-direction:column;
+            align-items: left;
+            background-color: lightcoral;
+            width: 20vw;
+        }
+
+        /* FEATURES AND FLEXIBILITIES */
+        .feature { 
+            font-weight: bolder;
+            letter-spacing: 5px;
+        }
+
+        #content{
+            width: 60vw;
+            padding: 10px;
+            display:flex;
+            flex-direction:column;
+            align-items: left;
+            gap: 20px;
+            background-color: white;
+            background-image:url("images/reang.gif");
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius:10px ;
+            border:2px solid black;
+            font-weight: bolder;
+            letter-spacing: 5px;
+            
+        }
+
+
+
+        /* LOGO ANGULAR */
+        #ang {
+            
+            height:5vw;
+            width:5vw;
+            position: static;
+      
+         
+            }
+ 
+
+        .data {
+           
+            box-shadow: 1px 1px 1px 1px greenyellow;
+        }
+        a { 
+            font-size: medium;
+            font-weight: bolder;
+            letter-spacing: 2px;
+            color:white;
+           
+        }
+        
+        li { 
+            display: flex;
+            justify-content: center;
+            border: 1px solid black;
+            border-radius: 5px;
+            box-shadow: 2px 2px 2px 1px black;
+            font-size:small;
+            font-weight: bold;
+            padding: 3px;
+            margin: 10px;
+            /* To add the time we use transistion */
+            transition: transform 0.15s;  
+
+        }
+        li:hover {
+            color:white;
+            transform: rotate(8deg);
+        }
+
+        img {
+            border: 3px solid black;
+            border-radius: 5px;
+            padding:0px;                
+            width:95%;
+            height:95%;
+            object-fit:cover;
+            display: block;
+            transition: width 0.5s;  
+        }
+        img:hover {
+            width: 100%;
+        }
+        .getstart {
+            background-color: lightcoral;
+            padding: 10px;
+            border-radius: 8px;
+            color:white;
+            width :15vw;
+            border: 1px solid lightcoral;
+           
+        }
+        .getstart:hover {
+            border: 1px solid lightcoral;
+            background-color: white;
+            color: lightcoral;
+        }
+
+        h5 {
+            color: rgb(248, 81, 109);
+        }
+
+        
+        .hcontent {
+        letter-spacing: 0px;
+        box-shadow: inset 0 0 0 0 lightcoral;
+        border-radius: 10px;
+        color: black;
+        margin: 0 -.25rem;
+        padding: 10px;
+        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+            
+        }
+
+        .hcontent:hover{
+            box-shadow: inset 800px 0 0 0 lightcoral;
+            color: white;
+        }
+        
+
+    </style>
+</head>
+<body p-0>
+    
+        <div id = "navgbar" class = "container-fluid" p-0>
+            <img id="ang" style = "border:none;"src="./images/angular.png" alt=""> 
+            <h6>ANGULAR</h6>
+        </div>
+
+        <div id="middle">
+                <div id="left">
+                    <div class="feature">FEATURES</div>
+                        <ul>
+                            <li> Single page Application</li> 
+                            <li>Cross Platform</li>          
+                            <li>App-like experiences</li>  
+                            <li>Progressive Web Apps</li>
+                            <li>Code Splitting</li> 
+                            <li>Two-Way Data Binding</li>  
+                            <li>Angular CLI </li>
+
+                        </ul>
+                </div>
+                <div id="content">
+                        <div class = "getstart">GET STARTED </div>
+
+                        <div class="hcontent" >
+                                <h5>Speed & Performance</h7>
+                                <p class ="hcontent" style="font-size:medium; font-weight:lighter;">Achieve the maximum speed possible on the Web Platform today, and take it further, via Web Workers and server-side rendering.</p>
+                        
+                        </div>
+                        
+                        <div class="hcontent">
+                                <h5>Incredible Tooling</h5>
+                                <p style="font-size:medium; font-weight:lighter;">Build features quickly with simple, declarative templates. Extend the template language with your own components and use a wide array of existing components.</p>
+                            
+                        </div>
+                       
+                        <div class="hcontent">
+                                <h5>Loved by Millions</h5>
+                                <p style="font-size:medium; font-weight:lighter;">From prototype through global deployment, Angular delivers the productivity and scalable infrastructure that supports Google's largest applications.</p>
+                            
+                        </div>  
+                </div>
+                <div id="right">
+                        <div class="feature">FLEXIBILITY</div>
+                        <div class ="left-content"><img src="./images/aph.jpg" alt=""></div>
+                        <div class ="left-content"><img src="./images/apy.png" alt=""></div>
+                        <div class ="left-content"><img src="./images/mean.png" alt=""></div>
+                </div>
+        </div>
+
+        <div id="footer">
+            <a href="resource">Contact</a>
+            <a href="help">Help</a>
+            <a href="community">Community</a>
+            <a href="Products">Products</a>
+
+        </div>
+
+    
+</body>
+</html>
